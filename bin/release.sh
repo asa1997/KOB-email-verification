@@ -21,7 +21,7 @@ cp $HOME/KOB-email-verification/scripts/tmpl/*.tmpl $HOME/KOB-email-verification
 for file in $HOME/KOB-email-verification/scripts/*.tmpl;
 do
     sed -i "s/@VERSION@/$version/g" $file
-    sed -i "s/@KOB_NAMESPACE@/$KOBNAMESPACE/g" $file
+    sed -i "s/@KOB_NAMESPACE@/$KOB_NAMESPACE/g" $file
     # renaming to remove .tmpl extension
     mv "$file" "${file//.tmpl/}"
 done
