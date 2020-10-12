@@ -12,7 +12,7 @@ if [[ -z $KOB_NAMESPACE ]];
 fi
 
 cd $HOME/KOB-email-verification
-git checkout master
+git checkout test
 git branch -D $branch
 git checkout -b $branch
 
@@ -35,5 +35,5 @@ git push -f -u origin $branch
 git tag -a $version -m "Releasing version $version"
 git push origin $version
 
-#checkout to master
-git checkout master
+#checkout to test
+git checkout test

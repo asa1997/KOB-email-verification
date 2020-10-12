@@ -29,8 +29,8 @@ git add $HOME/KOB-email-verification/dist/*
 git commit -m "Released the version $version"
 git push origin -f $dist_branch
 
-#checkout back to master
-git checkout master
+#checkout back to test
+git checkout test
 
 
 
