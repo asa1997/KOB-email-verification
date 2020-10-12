@@ -26,7 +26,7 @@ do
     mv "$file" "${file//.tmpl/}"
 done
 
-git add $HOME/KOB-email-verification/scripts/*.tmpl
+git add $HOME/KOB-email-verification/scripts/*.io
 git commit -m "Update version of $branch to $version"
 
 git push -f -u origin $branch
