@@ -10,7 +10,7 @@ git checkout $branch
 
 mkdir -p build/tmp
 
-zip -r $HOME/KOB-email-verification/build/tmp/kob-email-latest.zip COMPLIANCE.yaml $(ls -d */ | grep -v "bin" | grep -v "build") 
+zip -r $HOME/KOB-email-verification/build/tmp/kob-email-latest.zip COMPLIANCE.yaml $(ls -d */ | grep -v "bin" | grep -v "build") -x scripts/tmpl scripts/*.io
 
 cp $HOME/KOB-email-verification/build/tmp/kob-email-latest.zip $HOME/KOB-email-verification/build/tmp/kob-email-$version.zip
 
