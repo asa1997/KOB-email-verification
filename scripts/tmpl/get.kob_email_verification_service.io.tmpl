@@ -11,4 +11,4 @@ curl -sL --location --progress-bar "${KOB_SERVICE}/${KOB_NAMESPACE}/KOB-email-ve
 echo "Unpacking files...."
 unzip $HOME/kob-email.zip -d $HOME/KOB-email-verification-service
 [[ "$?" == "0" ]] && echo "Success"
-[[ -f $HOME/kob-email-latest.zip ]] && rm $HOME/kob-email.zip
+[[ -f $HOME/kob-email.zip ]] && rm $HOME/kob-email.zip
